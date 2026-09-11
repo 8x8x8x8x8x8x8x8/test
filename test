@@ -1,0 +1,203 @@
+-- GUI 2 LUA --
+
+local ScreenGui_1 = Instance.new("ScreenGui")
+local Frame_1 = Instance.new("Frame")
+local UICorner_1 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_1 = Instance.new("TextLabel")
+local LocalScript_1 = Instance.new("LocalScript")
+local TextLabel1_1 = Instance.new("TextLabel")
+local LocalScript_2 = Instance.new("LocalScript")
+local editorBox_1 = Instance.new("TextBox")
+local ClearButton_1 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local LocalScript_3 = Instance.new("LocalScript")
+local EXECUTE_1 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local LocalScript_4 = Instance.new("LocalScript")
+local UI Drag_1 = Instance.new("LocalScript")
+local ThumbnailCamera_1 = Instance.new("Camera")
+local Configuration_1 = Instance.new("Configuration")
+local Pаckаgе_1 = Instance.new("Script")
+local Sync_1 = Instance.new("NumberPose")
+local _id_1 = Instance.new("StringValue")
+
+ScreenGui_1.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame_1.BackgroundColor3 = Color3.fromRGB(19, 19, 61)
+Frame_1.Parent = ScreenGui_1
+Frame_1.Position = UDim2.new(0.2859259247779846, 0, 0.1997828483581543, 0)
+Frame_1.Size = UDim2.new(0, 615, 0, 387)
+Frame_1.Selectable = false
+
+UICorner_1.Parent = Frame_1
+
+Frame_2.BackgroundColor3 = Color3.fromRGB(20, 44, 69)
+Frame_2.Parent = Frame_1
+Frame_2.Position = UDim2.new(0.01300812978297472, 0, 0.023255813866853714, 0)
+Frame_2.Size = UDim2.new(0, 121, 0, 52)
+Frame_2.Selectable = false
+
+UICorner_2.Parent = Frame_2
+
+TextLabel_1.BackgroundTransparency = 1
+TextLabel_1.Parent = Frame_2
+TextLabel_1.Position = UDim2.new(0, 0, -0.09615384787321091, 0)
+TextLabel_1.Size = UDim2.new(0, 118, 0, 61)
+TextLabel_1.Selectable = false
+TextLabel_1.FontFace = Font.new("rbxasset://fonts/families/Bangers.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+TextLabel_1.RichText = true
+TextLabel_1.Text = "Fe Bypass"
+TextLabel_1.TextScaled = true
+TextLabel_1.TextSize = 14
+TextLabel_1.TextWrapped = true
+
+TextLabel1_1.BackgroundTransparency = 1
+TextLabel1_1.Name = "TextLabel1"
+TextLabel1_1.Parent = Frame_2
+TextLabel1_1.Position = UDim2.new(1.0661157369613647, 0, 0.21153846383094788, 0)
+TextLabel1_1.Size = UDim2.new(0, 118, 0, 30)
+TextLabel1_1.Selectable = false
+TextLabel1_1.FontFace = Font.new("rbxasset://fonts/families/Bangers.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+TextLabel1_1.RichText = true
+TextLabel1_1.Text = "First Every Real Fe Bypass"
+TextLabel1_1.TextScaled = true
+TextLabel1_1.TextSize = 14
+TextLabel1_1.TextWrapped = true
+
+editorBox_1.ClearTextOnFocus = false
+editorBox_1.CursorPosition = -1
+editorBox_1.MultiLine = true
+editorBox_1.Name = "editorBox"
+editorBox_1.Parent = Frame_1
+editorBox_1.Position = UDim2.new(0.039024390280246735, 0, 0.2067183405160904, 0)
+editorBox_1.Size = UDim2.new(0, 410, 0, 206)
+editorBox_1.ClipsDescendants = true
+editorBox_1.PlaceholderColor3 = Color3.fromRGB(128, 128, 128)
+editorBox_1.Text = ""
+editorBox_1.TextXAlignment = Enum.TextXAlignment.Left
+editorBox_1.TextYAlignment = Enum.TextYAlignment.Top
+
+ClearButton_1.BackgroundColor3 = Color3.fromRGB(249, 10, 18)
+ClearButton_1.Name = "ClearButton"
+ClearButton_1.Parent = Frame_1
+ClearButton_1.Position = UDim2.new(0.28455284237861633, 0, 0.8087855577468872, 0)
+ClearButton_1.Size = UDim2.new(0, 107, 0, 50)
+ClearButton_1.FontFace = Font.new("rbxasset://fonts/families/FredokaOne.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+ClearButton_1.RichText = true
+ClearButton_1.Text = "Clear"
+ClearButton_1.TextScaled = true
+ClearButton_1.TextSize = 40
+ClearButton_1.TextWrapped = true
+
+UICorner_3.Parent = ClearButton_1
+
+EXECUTE_1.BackgroundColor3 = Color3.fromRGB(249, 10, 18)
+EXECUTE_1.Name = "EXECUTE"
+EXECUTE_1.Parent = Frame_1
+EXECUTE_1.Position = UDim2.new(0.04878048598766327, 0, 0.8087855577468872, 0)
+EXECUTE_1.Size = UDim2.new(0, 107, 0, 50)
+EXECUTE_1.FontFace = Font.new("rbxasset://fonts/families/FredokaOne.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+EXECUTE_1.RichText = true
+EXECUTE_1.Text = "Execute"
+EXECUTE_1.TextScaled = true
+EXECUTE_1.TextSize = 40
+EXECUTE_1.TextWrapped = true
+
+UICorner_4.Parent = EXECUTE_1
+
+local function C7f438b1111e4441a9b47850956d63d5()
+local script = Instance.new("LocalScript", TextLabel_1)
+local label = script.Parent
+local RunService = game:GetService("RunService")
+
+RunService.RenderStepped:Connect(function()
+	local hue = (tick() % 5) / 5
+	label.TextColor3 = Color3.fromHSV(hue, 1, 1)
+end)
+
+end
+
+coroutine.wrap(C7f438b1111e4441a9b47850956d63d5)()
+
+local function C718e5acfe85d47b1bc1e65e93f5d178()
+local script = Instance.new("LocalScript", TextLabel1_1)
+local label = script.Parent
+local RunService = game:GetService("RunService")
+
+RunService.RenderStepped:Connect(function()
+	local hue = (tick() % 5) / 5
+	label.TextColor3 = Color3.fromHSV(hue, 1, 1)
+end)
+
+end
+
+coroutine.wrap(C718e5acfe85d47b1bc1e65e93f5d178)()
+
+local function C9e9596505de541af9a3672706430ddd()
+local script = Instance.new("LocalScript", ClearButton_1)
+local button = script.Parent
+local textBox = button.Parent.editorBox
+
+button.MouseButton1Click:Connect(function()
+	textBox.Text = ""
+end)
+
+end
+
+coroutine.wrap(C9e9596505de541af9a3672706430ddd)()
+
+local function C1596a0ea3fcf4961ab619207bcbac3a()
+local script = Instance.new("LocalScript", EXECUTE_1)
+execButton.MouseButton1Click:Connect(function()
+	local s = editorBox.Text
+	if s ~= "" then
+		exec(s)
+		switchPage("CONSOLE")
+	end
+end)
+end
+
+coroutine.wrap(C1596a0ea3fcf4961ab619207bcbac3a)()
+
+local function C72eb693dac1e4ff09f0571d6a28261a()
+local script = Instance.new("LocalScript", Frame_1)
+local function makeDraggable()
+	local dragToggle = nil
+	local dragSpeed = 0.1
+	local dragStart = nil
+	local startPos = nil
+	local UIS = game:GetService("UserInputService")
+
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		script.Parent.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+
+	script.Parent.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragToggle = true
+			dragStart = input.Position
+			startPos = script.Parent.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+
+	script.Parent.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+
+makeDraggable()
+end
+
+coroutine.wrap(C72eb693dac1e4ff09f0571d6a28261a)()
